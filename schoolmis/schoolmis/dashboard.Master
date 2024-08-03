@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="dashboard.Master.cs" Inherits="schoolmis.dashboardMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dashboard</title>
+
+
+    <!--LINKS -->
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+
+
+    <!--FONTAWESOME FOR THE ICONS-->
+
+    <link href="assets/StyleSheet.css?Version=1" rel="stylesheet" />
+
+    <link href="assets/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- CONTENT PLACEHOLDER FOR THE DASHBOARD MASTERPAGE HEADER-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <style type="text/css">
+        /**side menubar styling part*/
+        .atag {
+            color: #b6ff00;
+            text-decoration: none;
+        }
+
+            .atag:hover {
+                color: white;
+                font-size: large;
+            }
+
+        .atagSub {
+            text-decoration: none;
+        }
+
+            .atagSub:hover {
+                color: #1e1e1e;
+                font-size: large;
+            }
+
+        .space {
+            margin-top: 10px;
+            margin-left: -100px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .topnav-right {
+            float: right;
+            color: white;
+        }
+
+        .menuCustomise {
+            height: 50px;
+        }
+
+        .content {
+            margin-top: 10px;
+        }
+
+        .navv {
+            height: 70px;
+        }
+
+        .username {
+            margin-top: 30px;
+            margin-left: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!--MENU BAR FOR THE PAGES!-->
+    <!--Navbar-->
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <nav class="menuCustomise navbar navbar-expand-lg navbar-dark bg-dark navv">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Home.aspx">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Logout.aspx" tabindex="-1">Logout</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex" runat="server">
+                            <p style="color: white">
+                                <!--<asp:Image ID="userProfPic" runat="server" Height="50px" Width="50px" Visible="true" CssClass="" style="align-content:center; 
+                                    border-radius: 50%; margin-top: 20px; margin-right: 5px;"/>-->
+
+                                <asp:Image ID="Image1" runat="server"
+                                    Height="50px" Width="50px" Visible="true" CssClass="" Style="align-content: center; border-radius: 50%; margin-top: 20px; margin-right: 5px;" />
+
+                            </p>
+                            <asp:Label ID="userNameLbl" runat="server" Text="" Style="color: white" CssClass="username"></asp:Label>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!-- CONTENT PLACEHOLDER FOR THE DASHBOARD MASTERPAGE -->
+
+    <div class="container">
+        <!--SIDEBAR SECTION OF THE DASHBOARD PART-->
+        <div class="row">
+
+            <div class="col-12 col-sm-6 col-md-3 space">
+                <div class="container-fluid">
+                    <ul class="list-group">
+                        <li class="list-group-item active"><a href="Home.aspx" class="atag"><i class="fas fa-2x fa-home icons"></i>Home</a></li>
+                        <li class="list-group-item"><a href="Score.aspx" class="atagSub"><i class="fas fa-2x fa-star-half-alt icons"></i>Score and Marks</a></li>
+                        <li class="list-group-item"><a href="AttandanceReport.aspx" class="atagSub"><i class="far fa-2x fa-edit icons"></i>Attandance</a></li>
+                        <li class="list-group-item"><a href="Subjects.aspx" class="atagSub"><i class="fas fa-2x fa-book icons"></i>Subjects</a></li>
+                        <li class="list-group-item"><a href="Homework.aspx" class="atagSub"><i class="fas fa-2x fa-book-reader icons"></i>Home Works</a></li>
+                        <li class="list-group-item"><a href="Chapters.aspx" class="atagSub"><i class="fas fa-2x fa-book-open icons"></i>Chapter & Books</a></li>
+                        <li class="list-group-item"><a href="UserDetails.aspx" class="atagSub"><i class="fas fa-2x fa-user-circle icons"></i>User Details</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col content">
+
+                <!--MAIN SECTION OF THE DASHBOARD PART-->
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder_Body" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        </div>
+
+    </div>
+    <!--End of the page content-->
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start">
+
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #000000; color: #808080">
+            © 2021 Copyright:
+    <a class="" href="https://tamanashah.net" style="text-decoration: none">Tamana Shah</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+</html>

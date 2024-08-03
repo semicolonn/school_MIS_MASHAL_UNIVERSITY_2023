@@ -1,0 +1,134 @@
+﻿
+/**
+
+
+
+*{
+     font-family: 'Roboto Mono', monospace, serif;
+  src:url(assets/Roboto_Mono/RobotoMono-VariableFont_wght.ttf); 
+}
+*/
+
+
+
+
+
+.logobrand {
+    color: #1219a2;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.titlereg {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    width: 10px;
+    color: #1219a2;
+    padding: 5px;
+    margin: 5px;
+}
+
+.heading {
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.SuccessMsg {
+    color: black;
+    background-color: lightgreen;
+    font-size: medium;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.logoCust:hover {
+    color: green;
+}
+
+
+form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.adjustPage {
+    padding-top: 20px;
+}
+
+.icons {
+    padding: 5px;
+}
+
+/**
+    teacher panel home design styles
+*/
+
+.gridA {
+    background-color: #0049cc;
+    /*border-color: #C70039;
+	border-style: solid;*/
+    height: 100px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+    color: #1c1a1a;
+}
+
+.gridB {
+    background-color: #0049cc;
+    /*border-color: #C70039;
+	border-style: solid;*/
+    height: 100px;
+    font-size: 15px;
+    padding-top: 20px;
+    color: #1c1a1a;
+}
+
+
+
+.center {
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-family: 'Roboto Mono', monospace, serif;
+    src: url(Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+
+.icons {
+    padding: 5px;
+}
+
+.fontcol {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.fontcol:hover {
+    color: #1d3557;
+}
+
+.dashelement:hover {
+    background-color: #ffba08;
+}
+
+.border{
+
+    border: solid; 
+    border-width: 5px; 
+    border-color: darkgray;
+    padding: 12px;
+}
+
+.ic{
+    margin: 100px;
+    color: yellow;
+}
